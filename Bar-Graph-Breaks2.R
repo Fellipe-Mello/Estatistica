@@ -340,7 +340,7 @@ plot2 <- ggplot(
 install.packages("devEMF")
 library(devEMF)
 
-setwd("C:/Fellipe/Artigos/Artigo_6/Figuras")
+setwd("DIRETORIO/SUBPASTA")
 emf("Teste2.emf",
     width = 12,   # inches
     height = 4,
