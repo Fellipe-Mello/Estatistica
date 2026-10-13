@@ -1,9 +1,9 @@
 install.packages("ggplot2")
 library(ggplot2)
 
-setwd('C:/Users/fellipe.alcantara/OneDrive - GATEC S A GESTAO AGROINDUSTRIAL/Fellipe_OneDriver/ESTER')
+setwd('DIRETORIO/SUBPASTA')
 
-bd <- read.csv("ZM.csv", sep = ";")
+bd <- read.csv("ARQUIVO.csv", sep = ";")
 is.na(bd)
 str(bd)
 bd$ZM         = as.character(as.integer(bd$ZM))
