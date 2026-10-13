@@ -2,11 +2,11 @@ library(dplyr)
 library(ggplot2)
 
 # Setwd
-setwd("C:/PD_Fellipe/Artigo_4/Dados/stats")
+setwd("DIRETORIO/SUBPASTA")
 list.files()
 
 # Load your dataset
-df <- read.csv("RJ_SHI.csv", sep = ";")   # adjust path if needed
+df <- read.csv("ARQUIVO.csv", sep = ";")   # adjust path if needed
 
 # Summarise SHI per Land Use (ignore depth)
 sumdf <- df %>%
@@ -31,8 +31,8 @@ Color_Palette <- c("2011" = "#228B22",
 
 
 
-setwd("C:/PD_Fellipe/Artigo_4/Figuras")
-tiff("SHI-RJ.tif", width = 2000, height = 2000, res = 400)
+setwd("DIRETORIO/SUBPASTA")
+tiff("ARQUIVO.tif", width = 2000, height = 2000, res = 400)
 # Horizontal bar plot
 ggplot(sumdf, aes(x = mean, y = Land.Use, fill = Land.Use)) +
   geom_bar(stat = "identity", width = 0.6) +
