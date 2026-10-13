@@ -17,8 +17,8 @@ library(ggbreak)
 #   Year    = publication year
 #
 
-setwd("C:/Fellipe/Artigos/Artigo_6/Dados")
-data <- read.csv("Country_Year.csv", header = TRUE, sep = ";")
+setwd("DIRETORIO/SUBPASTA")
+data <- read.csv("arquivo.csv", header = TRUE, sep = ";")
 
 # ------------------------------------------------------------
 # 2. CLEAN THE DATA
@@ -304,7 +304,7 @@ theme_classic() +
 install.packages("devEMF")
 library(devEMF)
 
-setwd("C:/Fellipe/Artigos/Artigo_6/Figuras")
+setwd("DIRETORIO/SUBPASTA")
 emf("Teste.emf",
     width = 12,   # inches
     height = 6,
